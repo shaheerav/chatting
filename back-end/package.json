@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"rm -rf dist && cp -R src dist",
+    "build": "shx rm -rf dist && shx cp -r src dist",
     "dev": "nodemon src/index.js",
-    "start":"node src/index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,8 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.7.3"
+    "mongoose": "^9.7.3",
+    "shx": "^0.4.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
